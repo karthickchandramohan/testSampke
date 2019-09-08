@@ -13,6 +13,10 @@ public class Hello {
 
     @GetMapping
     public String getHello() {
-        return "Hello World";
+        String st = "emp";
+
+        int i;
+        i = 2;
+              return "Hello World";
     }
 }
