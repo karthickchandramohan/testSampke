@@ -21,6 +21,7 @@ pipeline {
         }
 
         stage('Sonarqube') {
+        ws('/Users/karthickchandramohan/.jenkins/workspace/pip2') {
             environment {
                 scannerHome = tool 'Sonar'
             }
@@ -31,6 +32,7 @@ pipeline {
                 timeout(time: 10, unit: 'MINUTES') {
                     waitForQualityGate abortPipeline: true
                 }
+            }
             }
         }
     }
