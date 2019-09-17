@@ -17,6 +17,7 @@ public class Hello {
 
         int i;
         i = 2;
+        double dd;
               return "Hello World";
     }
 }
